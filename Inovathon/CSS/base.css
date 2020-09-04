@@ -1,0 +1,5 @@
+p {
+	color: blue;
+	font-size: 10vw;
+	/*PARA CRIAR FONTE RESPONSIVA: Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width*/
+}
