@@ -83,3 +83,15 @@ body {
 .nome {
 	padding-left: 1rem;
 }
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tags p {
+	border-style: solid; border-color: #CD7E59; border-width: 1px; border-radius: 20px;
+	padding-left: 10px; padding-right: 10px;
+	margin: 5px; /* top left bottom down*/
+
+}
