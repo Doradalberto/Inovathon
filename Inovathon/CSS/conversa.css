@@ -63,12 +63,14 @@ body {
 }
 
 /* MENSAGEM MOTIVACIONAL */
-.botao {
+.botao img{
 	/* border-style: solid; border-width: 3px; border-color: green;
 	background-color: white; */
-  /* text-align: center;
-  width: 60px; */
+   /* text-align: center; */
+  /* width: 60px;  */
   align-content:  center;
+  /* display: flex; */
+  width: 7rem;
 }
 
 /* PERFIL */
