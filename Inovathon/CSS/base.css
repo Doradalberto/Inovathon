@@ -92,12 +92,35 @@ body {
 	/*border-style: solid; border-width: 3px; border-color: green;*/
 }
 
+.foto-e-nome_empresa{
+	justify-content: center;
+}
+
 .foto img {
 	width: 7rem;
 }
 
+.foto_empresa img{
+	width: 50%;
+	margin-left: 25%;
+	align-items: center;
+  	justify-content: center;
+}
+
+.info{
+	text-size-adjust: 10px;
+	font-weight: bold ;
+}
+
 .nome {
 	padding-left: 1rem;
+}
+
+.nome_empresa{
+	margin-left: 10px;
+	margin-top: -15px;
+	text-size-adjust: 10px;
+	margin-bottom: 20px;
 }
 
 .tags {
