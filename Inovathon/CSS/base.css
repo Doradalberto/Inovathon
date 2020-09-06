@@ -147,6 +147,19 @@ body {
 
   }
   .add{
+	background-color: #000;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	display: flex;
+	/* width: 100%; **/
+	margin-bottom: 20px;
+	justify-content: center;
+  }
+  .add1{
 	border: none;
 	outline: 0;
 	padding: 12px;
