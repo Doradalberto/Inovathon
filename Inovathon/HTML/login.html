@@ -70,40 +70,31 @@ input[type=text], input[type=password] {
 
 	    <div class="container">
 	      <label for="uname"><b>Usuário</b></label>
-	      <input class="padding-bottom" type="text" placeholder="Digite o usuário" name="uname" id="user" required>
+		  <input class="padding-bottom" type="text" placeholder="Digite o usuário" name="uname" id="user" required  >
+		  
 
 	      <label for="psw"><b>Senha</b></label>
-	      <input class="padding-bottom" type="password" placeholder="Digite a senha" name="psw" required>
-	        
-	      <a href="#" class="login" id="click" onclick="oie()">Login</a>
+		  <input class="padding-bottom" type="password" placeholder="Digite a senha" name="psw" required>
+		  <a href="#" class="login" id="click"><button onclick="myFunction()" >Login</button></a>
+		  
 	    </div>
 	</div>
+	<script>
+		function myFunction() {
+			user1 = document.getElementById("user").value
+			var link = document.getElementById("click");
+			if (user1 == "adm") {
+				click.setAttribute('href',"chat.html")
+			}
+			if (user1 == "user") {
+				click.setAttribute('href',"home.html")
+			}
+			
 
+			
+		}
+		</script>
 
-<script>
-
-function redireciona() {
-	var user1 = document.getElementById('user');
-	var botao = document.getElementById('click');
-	console.log(user1)
-
-	function oie(){
-		document.getElementById("click").setAttribute("onclick", "location.href='home.html'");
-	}
-
-	if (user1 == "usuario") {
-		console.log(user1)
-		document.getElementById("click").setAttribute("onclick", "location.href='home.html'");
-	}
-	else if (user1 == "administrador") {
-		document.getElementById("click").setAttribute("onclick", "location.href='chat.html'")
-	}
-	else {
-
-	}
-}
-
-</script>
 
 </body>
 </html>
