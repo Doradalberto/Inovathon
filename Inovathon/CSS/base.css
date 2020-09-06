@@ -48,6 +48,12 @@ body {
   font-family: Philosopher-Regular;
 }
 
+.navbar img{
+	margin-top: 2px;
+	width: 15%;
+	margin-left: 20px;
+}
+
 .navbar a {
   float: left;
   display: block;
