@@ -140,6 +140,7 @@ body {
 .nome_empresa .link{
 	text-size-adjust: 60px;
 	font-family: Philosopher-Regular;
+	margin-bottom: 50px;
 }
 
 .tags {
@@ -195,35 +196,53 @@ body {
   }
   .add{
 	background-color: #ed6051;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	text-decoration: none;
-	display: flex;
-	/* width: 100%; **/
-	margin-bottom: 20px;
-	justify-content: center;
-	font-family: Philosopher-Regular;
+  color: white;
+  padding: 14px 165px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: Philosopher-Regular;
   }
   .add1{
-	border: none;
-	outline: 0;
-	padding: 12px;
-	color: white;
-	background-color: #dd7b73;
-	text-align: center;
-	cursor: pointer;
-	width: 100%;
-	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-family: Philosopher-Regular;
+	background-color: #ed6051;
+  color: white;
+  padding: 14px 125px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  font-family: Philosopher-Regular;
+  margin-bottom: 50px;
+  }
+  .add2{
+	background-color: #ed6051;
+  color: white;
+  padding: 14px 150px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  font-family: Philosopher-Regular;
   }
   .main .oi {
 	  margin-top: 20px;
   }
   .main .inicial{
 	  margin-top: -5px;
+  }
+  .vagas{
+	  align-content: space-around;
+  }
+  .arruma{
+	  border:none;
+	  background-color: #ed6051;
+	  color:white;
+	  font-size: 15px;
+	  font-family: Philosopher-Regular;
   }
