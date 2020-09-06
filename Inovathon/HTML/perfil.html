@@ -4,7 +4,7 @@
 <head>
 	<title> Home </title>
 	<link href="..\CSS\base.css" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,11 +25,11 @@
 	  		<img src="..\IMAGENS\persona.png">
 	  	</div>
 	  	<div class="nome">
-	  		<p>Maria Santos</p>
+	  		<p>Jéssica Santos</p>
 	  	</div>
 	  </div>
 
-	  <div class="meus-interesses">
+	  <!-- <div class="meus-interesses">
 	  	<p> Meus interesses: </p>
 	  	<div class="tags">
 	  		<p>Marketing</p>
@@ -37,15 +37,91 @@
 	  		<p>Lojista</p>
 	  		<p>Tecnologia</p>
 	  	</div>
-	  </div>
+	  </div> -->
 
-	  <p>Some text some text some text some text some text.</p>
-	  <p>some text some text some text some text some text</p>
-	  <p>Some text some text some text some text some text.</p>
+	  <button class="accordion primeiro">Quem sou eu?</button>
+		<div class="panel">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+	  <button class="accordion">Experiências</button>
+		<div class="panel">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+	  <button class="accordion">Currículo</button>
+		<div class="panel">
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
 
 	  <a href="login.html" class="add" ><button>Sair</button></a>
 	</div>
 
 </body>
+<style type="text/css">
+	p {
+		/*font-family: 'Philosopher', sans-serif;*/
+	}
+	button {
+
+	}
+	.accordion {
+	  background-color: rgb(237,96,81,0.2);
+	  color: #444;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	  transition: 0.4s;
+	  margin-bottom: 10px;
+	}
+
+	.active, .accordion:hover {
+	  background-color: #ccc;
+	}
+
+	.accordion:after {
+	  content: '\002B';
+	  color: #777;
+	  font-weight: bold;
+	  float: right;
+	  margin-left: 5px;
+	}
+
+	.active:after {
+	  content: "\2212";
+	}
+	.panel {
+	  padding: 0 18px;
+	  background-color: white;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	}
+	.primeiro {
+		margin-top: 15px;
+	}
+
+</style>
+
+<script type="text/javascript">
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight) {
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  });
+	}
+</script>
 
 </html>
