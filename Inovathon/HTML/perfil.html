@@ -29,16 +29,6 @@
 	  	</div>
 	  </div>
 
-	  <!-- <div class="meus-interesses">
-	  	<p> Meus interesses: </p>
-	  	<div class="tags">
-	  		<p>Marketing</p>
-	  		<p>Vendedora</p>
-	  		<p>Lojista</p>
-	  		<p>Tecnologia</p>
-	  	</div>
-	  </div> -->
-
 	  <button class="accordion primeiro">Quem sou eu?</button>
 		<div class="panel">
   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -46,25 +36,53 @@
 
 	  <button class="accordion">Experiências</button>
 		<div class="panel">
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="exp">
+				<p>Estágio de férias na ' Trybe '</p>
+  				<p>Jul/2019 - Ago/2020</p>
+			</div>
+			<div class="exp">
+				<p>Participação do Inovathon</p>
+				<p>dias 4, 5, 6 de Setembro/2020</p>
+			</div>
+  			
+		</div>
+
+	  <button class="accordion">Cursos concluídos</button>
+		<div class="panel">
+  			<p> Excel Básico 1 </p>
+  			<p> Introdução I ao HTML </p>
+  			<p> Introdução II ao HTML</p>
+  			<p> Para que serve HTML? </p>
 		</div>
 
 	  <button class="accordion">Currículo</button>
 		<div class="panel">
-  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  			<p><a download="..\IMAGENS\CURRICULO.png" style="text-decoration: none; color: black"> Fazer o download </a></p>
+  			<img id="myImg" src="..\IMAGENS\CURRICULO.png" alt="Curriculum Vitae" style="width:100%;max-width:300px;">
+
 		</div>
 
-	  <a href="login.html" class="add" ><button>Sair</button></a>
+		
+
+	  <a href="login.html" class="add" ><button class="arruma">Sair</button></a>
 	</div>
 
 </body>
 <style type="text/css">
-	p {
-		/*font-family: 'Philosopher', sans-serif;*/
-	}
-	button {
 
+	.exp {
+		border-width: 1px;
+		border-color: #dd7b73;
+		border-style: solid;
+		border-radius: 5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 16px;
 	}
+	.exp p {
+		margin:0px;
+	}
+
 	.accordion {
 	  background-color: rgb(237,96,81,0.2);
 	  color: #444;
@@ -76,11 +94,11 @@
 	  outline: none;
 	  font-size: 15px;
 	  transition: 0.4s;
-	  margin-bottom: 10px;
+	  margin-top: 10px;
 	}
 
 	.active, .accordion:hover {
-	  background-color: #ccc;
+	  background-color: rgb(237,96,81,0.4);
 	}
 
 	.accordion:after {
@@ -91,9 +109,10 @@
 	  margin-left: 5px;
 	}
 
-	.active:after {
+	/*.active:after {
 	  content: "\2212";
-	}
+	}*/
+
 	.panel {
 	  padding: 0 18px;
 	  background-color: white;
@@ -104,6 +123,7 @@
 	.primeiro {
 		margin-top: 15px;
 	}
+
 
 </style>
 
@@ -122,6 +142,7 @@
 	    } 
 	  });
 	}
+
 </script>
 
 </html>

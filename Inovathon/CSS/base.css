@@ -31,6 +31,13 @@ body {
 	/*display: block;*/
 }
 
+.arruma {
+	border: none;
+	background-color: #ed6051;
+	color: white;
+	font-size:15px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -193,7 +200,7 @@ body {
 	  padding-top: 15px;
 
   }
-  .add{
+  .add {
 	background-color: #ed6051;
 	color: white;
 	padding: 14px 20px;
@@ -206,7 +213,9 @@ body {
 	margin-bottom: 20px;
 	justify-content: center;
 	font-family: Philosopher-Regular;
+	text-decoration: none;
   }
+
   .add1{
 	border: none;
 	outline: 0;
