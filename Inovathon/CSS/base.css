@@ -122,6 +122,9 @@ body {
 	text-size-adjust: 10px;
 	margin-bottom: 20px;
 }
+.nome_empresa .link{
+	text-size-adjust: 60px;
+}
 
 .tags {
 	display: flex;
