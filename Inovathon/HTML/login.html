@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<html>
 <head>
-	<title> Login </title>
-	<link rel="stylesheet" type="text/css" href="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /*width: 10vw;*/
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 16px;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+.logo img {
+	width: 40%;
+}
+
+.login a {
+	justify-content: center;
+}
+
+.border {
+	border-width: 3px;
+	border-color: red;
+	border-style: solid;
+}
+
+.align-center {
+	margin-top: 30%;
+
+}
+
+.padding-bottom {
+	padding-bottom: 16px;
+}
+
+</style>
 </head>
 <body>
+	<div class="align-center">
+		<div class="logo">
+			<img src="../IMAGENS/persona.png">
+		</div>
+
+	    <div class="container">
+	      <label for="uname"><b>Usuário</b></label>
+	      <input class="padding-bottom" type="text" placeholder="Digite o usuário" name="uname" id="user" required>
+
+	      <label for="psw"><b>Senha</b></label>
+	      <input class="padding-bottom" type="password" placeholder="Digite a senha" name="psw" required>
+	        
+	      <a href="#" class="login" id="click" onclick="oie()">Login</a>
+	    </div>
+	</div>
+
+
+<script>
+
+function redireciona() {
+	var user1 = document.getElementById('user');
+	var botao = document.getElementById('click');
+	console.log(user1)
+
+	function oie(){
+		document.getElementById("click").setAttribute("onclick", "location.href='home.html'");
+	}
+
+	if (user1 == "usuario") {
+		console.log(user1)
+		document.getElementById("click").setAttribute("onclick", "location.href='home.html'");
+	}
+	else if (user1 == "administrador") {
+		document.getElementById("click").setAttribute("onclick", "location.href='chat.html'")
+	}
+	else {
+
+	}
+}
+
+</script>
 
 </body>
 </html>
