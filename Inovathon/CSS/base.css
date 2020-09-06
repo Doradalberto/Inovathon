@@ -5,9 +5,13 @@ p {
 }
 
 /*NAVIGATION BAR*/
+@font-face{
+	font-family: "Philosopher-Regular";
+	src: url("../FONTS/Philosopher-Regular.ttf") format("Philosopher-Regular");
+  }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Philosopher-Regular;
   background-color: #F4F4F4;
   /*max-width: 100vw;*/
 }
@@ -15,12 +19,15 @@ body {
 .bottom {
 	bottom: 0;
 	font-size: 17px;
+	font-family: Philosopher-Regular;
 }
 
 .top {
 	background-color: none !important;
 	/*padding-top:20px; padding-bottom: 20px;*/
 	font-size: 8vw !important;
+	font-family: Philosopher-Regular;
+	
 	/*display: block;*/
 }
 
@@ -31,6 +38,7 @@ body {
   background-color: #ffffff;
   position: fixed;
   width: 100%;
+  font-family: Philosopher-Regular;
 }
 
 .navbar a {
@@ -40,11 +48,13 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none; 
+  font-family: Philosopher-Regular;
 }
 
 .navbar a:hover {
   background: #f1f1f1;
   color: black;
+  font-family: Philosopher-Regular;
 }
 
 .navbar a.active {
@@ -67,6 +77,7 @@ body {
 	border-style: solid; border-width: 3px; border-color: green;
 	background-color: white;
 	text-align: center;
+	font-family: Philosopher-Regular;
 }
 
 /* CURSOS */
@@ -75,6 +86,7 @@ body {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	background-color: white;
+	font-family: Philosopher-Regular;
 	/*text-align: center;*/
 	/*background-image: url(https://image.freepik.com/fotos-gratis/fundo-gradiente-com-luzes-desfocadas-e-particulas_31965-4611.jpg);*/
 	/*background-image: url(https://media.istockphoto.com/photos/orange-and-yellow-gradient-background-picture-id903322984?k=6&m=903322984&s=170667a&w=0&h=laH_cWqNITUg6R8nb3sbJGt33jXvszoZWZNQJZyLZf4=);*/
@@ -110,10 +122,12 @@ body {
 .info{
 	text-size-adjust: 10px;
 	font-weight: bold ;
+	font-family: Philosopher-Regular;
 }
 
 .nome {
 	padding-left: 1rem;
+	font-family: Philosopher-Regular;
 }
 
 .nome_empresa{
@@ -121,20 +135,24 @@ body {
 	margin-top: -15px;
 	text-size-adjust: 10px;
 	margin-bottom: 20px;
+	font-family: Philosopher-Regular;
 }
 .nome_empresa .link{
 	text-size-adjust: 60px;
+	font-family: Philosopher-Regular;
 }
 
 .tags {
 	display: flex;
 	flex-wrap: wrap;
+	font-family: Philosopher-Regular;
 }
 
 .tags p {
 	border-style: solid; border-color: #CD7E59; border-width: 1px; border-radius: 20px;
 	padding-left: 10px; padding-right: 10px;
 	margin: 5px; /* top left bottom down*/
+	font-family: Philosopher-Regular;
 
 }
 
@@ -144,12 +162,13 @@ body {
 	max-width: 300px;
 	margin: auto;
 	text-align: center;
-	font-family: arial;
+	font-family: Philosopher-Regular;
   }
   
   .price {
 	color: grey;
 	font-size: 22px;
+	font-family: Philosopher-Regular;
   }
   
   .card button {
@@ -157,15 +176,17 @@ body {
 	outline: 0;
 	padding: 12px;
 	color: white;
-	background-color: #000;
+	background-color:#dd7b73 ;
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
 	font-size: 18px;
+	font-family: Philosopher-Regular;
   }
   
   .card button:hover {
 	opacity: 0.7;
+	font-family: Philosopher-Regular;
   }
 
   .imagem_logo{
@@ -173,7 +194,7 @@ body {
 
   }
   .add{
-	background-color: #000;
+	background-color: #ed6051;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
@@ -184,19 +205,21 @@ body {
 	/* width: 100%; **/
 	margin-bottom: 20px;
 	justify-content: center;
+	font-family: Philosopher-Regular;
   }
   .add1{
 	border: none;
 	outline: 0;
 	padding: 12px;
 	color: white;
-	background-color: #000;
+	background-color: #dd7b73;
 	text-align: center;
 	cursor: pointer;
 	width: 100%;
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	font-family: Philosopher-Regular;
   }
   .main .oi {
 	  margin-top: 20px;
